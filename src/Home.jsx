@@ -1,7 +1,7 @@
 import React from "react";
-
+import { redirect } from "react-router-dom";
 const Home = () => {
-  return <div></div>;
+  return <redirect to="./Login.jsx" />;
 };
 
 export default Home;
