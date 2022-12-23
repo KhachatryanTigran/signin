@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import { useState } from "react";
+import { Routes, Route, Link } from "react-router-dom";
 function Login(props) {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email);
+    console.log(e.target);
   };
   return (
     <>
@@ -34,12 +35,9 @@ function Login(props) {
           />
           <button type="submit">Log in</button>
         </form>
-        <button
-          className="link-btn"
-          onClick={() => props.onFormSwitch("register")}
-        >
+        <Link className="link-btn" to="/register">
           Don't have an account? Register here.{" "}
-        </button>
+        </Link>
       </div>
     </>
   );
