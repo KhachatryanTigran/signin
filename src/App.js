@@ -6,22 +6,17 @@ import { Routes, Route, Link } from "react-router-dom";
 import Login from "./Login";
 import Register from "./Register";
 import Home from "./Home";
-
+import { Layout } from "./component/Layout";
 function App() {
   return (
     <>
-      <div className="headerbar">
-        <Link className="home" to="/">
-          Home
-        </Link>
-        <Link to="/login">Login</Link>
-        <Link to="/register">Register</Link>
-      </div>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+          </Route>
         </Routes>
       </div>
     </>
