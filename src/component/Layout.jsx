@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, NavLink, Route, Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { CustomLink } from "./CustomLink";
 
 const setActive = ({ isActive }) => (isActive ? "active-link " : "not-Active ");

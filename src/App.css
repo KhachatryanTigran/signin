@@ -63,9 +63,10 @@ button {
   background-image: linear-gradient(79deg, #e63acf, #62d296 48%, #f7944d);
 }
 .active-link {
-  color: #07044b;
+  color: #12044b;
   font-weight: bold;
   font-style: oblique;
+  font-size: 20px;
 }
 .not-Active {
   color: white;

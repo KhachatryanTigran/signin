@@ -1,14 +1,24 @@
-import React, { useEffect, useRef } from "react";
 import { useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import useAuth from "./hook/useAuth";
 function Login(props) {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
-
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { signin } = useAuth();
+  const fromPage = location.state?.from?.pathname || "/";
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target);
+
+    const form = e.target;
+    const user = form.email.value;
+
+    signin(user, () => {
+      return navigate(fromPage, { replace: true });
+    });
   };
+
   return (
     <>
       <div className="author-form-continer">
