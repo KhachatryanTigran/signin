@@ -75,9 +75,6 @@ const Home = () => {
         </label>
         <button type="submit">Search</button>
       </form>
-      <Link className="link-btn" to="/register">
-        <h3>Didn't find anythings go to authorization </h3>
-      </Link>
       <div>
         {posts
           .filter(
