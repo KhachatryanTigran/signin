@@ -1,11 +1,24 @@
 .App {
-  text-align: center;
   display: flex;
+  text-align: center;
   min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  background-image: linear-gradient(79deg, #7439db, #c66fbc 48%, #f7944d);
+  flex-flow: column;
+  color: rgb(200, 4, 4);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  background-image: linear-gradient(79deg, #98074b, #177c46 48%, #a99304);
+}
+.home {
+  display: flex;
+  text-align: center;
+  min-height: 100vh;
+  flex-flow: column;
+  color: rgb(255, 255, 255);
 }
 .author-form-continer,
 .login-form,
@@ -40,16 +53,27 @@ button {
   cursor: pointer;
   color: #7439db;
 }
-.link-btn {
-  background: none;
-  color: white;
-  text-decoration: underline;
-}
-
-.headerbar {
+.main {
+  text-align: center;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
+  min-height: 100vh;
 
-  margin: 10px;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(79deg, #e63acf, #62d296 48%, #f7944d);
+}
+.active-link {
+  color: #07044b;
+  font-weight: bold;
+  font-style: oblique;
+}
+.not-Active {
+  color: white;
+}
+.singlepage {
+  display: flex;
+
+  min-height: 100vh;
+  flex-flow: column;
+  color: rgb(237, 13, 13);
 }
