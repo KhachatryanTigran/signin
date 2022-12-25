@@ -11,9 +11,13 @@ export const Layout = () => {
           {" "}
           Home
         </NavLink>
+        <NavLink to="/about" className={setActive}>
+          About Us
+        </NavLink>
         <NavLink to="/login" className={setActive}>
           Login
         </NavLink>
+
         <NavLink to="/register" className={setActive}>
           Register
         </NavLink>

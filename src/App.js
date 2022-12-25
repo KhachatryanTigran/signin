@@ -11,6 +11,7 @@ import { Singlepage } from "./Singlepage";
 import { CustomLink } from "./component/CustomLink";
 import { RequireAuth } from "./hoc/RequireAuth";
 import { AuthProvider } from "./hoc/AuthProvider";
+import { AboutUs } from "./AboutUs";
 function App() {
   return (
     <>
@@ -24,7 +25,7 @@ function App() {
                 path="/login-me"
                 element={<Navigate to="/login" replace />}
               />
-
+              <Route path="/about/*" element={<AboutUs />} />
               <Route
                 path="/:id"
                 element={

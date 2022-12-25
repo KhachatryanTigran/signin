@@ -64,7 +64,7 @@ const Home = () => {
           id="search"
           name="search"
         />
-        <label>
+        <label className="checkbox">
           <input
             type="checkbox"
             checked={checked}
