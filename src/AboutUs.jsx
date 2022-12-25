@@ -23,7 +23,7 @@ export const AboutUs = () => {
     <>
       <div className="aboutpage">
         <h1>ACA React Team </h1>
-        <p>This is ademo version about page app.</p>
+        <p>This is a demo version about page app.</p>
         <NavLink to="about" className={setActive}>
           {" "}
           Contact{" "}
