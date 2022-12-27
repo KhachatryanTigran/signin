@@ -13,7 +13,7 @@ export const NewPost = () => {
         <input type="text" name="body" />
       </label>
       <input type="hidden" name="userId" value="1" />
-      <input type="submit" value="Add post" disabled={submitting} />
+      <input type="submit" value="Add post" disabled={"submitting"} />
     </Form>
   );
 };

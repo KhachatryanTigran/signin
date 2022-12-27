@@ -1,5 +1,12 @@
 import React from "react";
-import { Routes, NavLink, Route, Navigate, Link } from "react-router-dom";
+import {
+  Routes,
+  NavLink,
+  Route,
+  Navigate,
+  Link,
+  useMatch,
+} from "react-router-dom";
 export const AboutUs = () => {
   const question = (
     <div>
@@ -19,6 +26,11 @@ export const AboutUs = () => {
   );
   const setActive = ({ isActive }) =>
     isActive ? "active-link " : "not-Active ";
+  const match = useMatch({
+    path: "/about",
+    end: false,
+  });
+
   return (
     <>
       <div className="aboutpage">
