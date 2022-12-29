@@ -21,6 +21,12 @@ export const Layout = () => {
         <NavLink to="/register" className={setActive}>
           Register
         </NavLink>
+        <NavLink to="/customregister" className={setActive}>
+          Custom Register
+        </NavLink>
+        <NavLink to="/custonlogin" className={setActive}>
+          Custom Login
+        </NavLink>
       </header>
       <main className="main">
         <Outlet />

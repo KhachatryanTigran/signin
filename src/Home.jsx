@@ -36,7 +36,6 @@ export const loader = async ({ request, params }) => {
     );
   }
 
-  console.log("posts ", await posts);
   return defer({ posts: getPosts() });
 };
 
@@ -76,6 +75,12 @@ const Home = () => {
   return (
     <div className="home">
       <h2>Home Page </h2>{" "}
+      <Link
+        to="/posts/new"
+        style={{ margin: "1rem 0", display: "inline-block" }}
+      >
+        Add new post
+      </Link>
       {user ? (
         <>
           <h3>{user}</h3>

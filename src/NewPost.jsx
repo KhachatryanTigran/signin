@@ -1,7 +1,7 @@
 import React from "react";
 import { Form } from "react-router-dom";
 
-export const NewPost = () => {
+export const NewPost = ({ submitting }) => {
   return (
     <Form action="posts/new" method="post">
       <label>
@@ -13,7 +13,7 @@ export const NewPost = () => {
         <input type="text" name="body" />
       </label>
       <input type="hidden" name="userId" value="1" />
-      <input type="submit" value="Add post" disabled={"submitting"} />
+      <input type="submit" value="Add post" disabled={submitting} />
     </Form>
   );
 };

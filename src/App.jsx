@@ -21,6 +21,8 @@ import { AboutUs } from "./AboutUs";
 import { createPostAction, EditPost } from "./EditPost";
 import ErrorPage from "./Error";
 import { Createpost } from "./Createpost";
+import CustomRegister from "./CustomRegister";
+import CustomLogin from "./CustomLogin";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -64,6 +66,8 @@ const router = createBrowserRouter(
       />
       <Route path="/id" element={<CustomLink to="/id" />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/customregister" element={<CustomRegister />} />
+      <Route path="/custonlogin" element={<CustomLogin />} />
     </Route>
   )
 );
